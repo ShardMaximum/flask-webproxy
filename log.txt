@@ -1,0 +1,9 @@
+2026-05-29 00:02:42.316789 - https://google.com - Bloqueado
+2026-05-29 00:02:51.644708 - http://httpforever.com - Filtrado
+2026-05-29 00:02:59.297957 - https://google.com - Bloqueado
+2026-05-29 00:03:00.777262 - https://youtube.com - Filtrado
+2026-05-29 00:04:50.148825 - https://youtube.com - Filtrado
+2026-05-29 00:05:02.109323 - https://http.cat - Filtrado
+2026-05-29 00:06:01.313713 - https://http.cat - Filtrado
+2026-05-29 00:07:05.136649 - http://httpforever.com - Filtrado
+2026-05-29 00:07:31.201968 - http://httpforever.com - Permitido
