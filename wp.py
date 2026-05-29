@@ -1,9 +1,13 @@
-from flask import Flask, request, Response
+from flask import Flask, request, Response, render_template
 import requests, json
 
-#json.load
-
 app = Flask(__name__)
+
+with open("blocked.json", "r") as blockfile:
+    blocklist = json.load(blockfile)
+
+with open("words.json", "r") as wordsfile:
+    filter = json.load(wordsfile)
 
 @app.route('/<path:url>')
 def proxy(url):
@@ -12,6 +16,9 @@ def proxy(url):
 
     try:
         resposta = requests.get(url)
+
+        if url in blocklist["blocked"]:
+            return render_template("./blocked.html")
 
         return Response(
             resposta.content,
